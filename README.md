@@ -7,7 +7,7 @@
 
 Kumpulan lima proyek SQL yang saya selesaikan melalui jalur pembelajaran DQLab. Portofolio ini menunjukkan kemampuan mengolah data transaksi, menganalisis perilaku pelanggan, mengevaluasi kinerja penjualan, dan menerjemahkan pertanyaan bisnis menjadi kueri SQL yang terstruktur.
 
-> **Catatan:** Proyek-proyek ini dikerjakan sebagai bagian dari pembelajaran terstruktur DQLab. Implementasi kueri dan penyelesaian latihan pada repository ini merupakan hasil pekerjaan saya, sedangkan materi, studi kasus, dan dataset tetap menjadi hak pemilik masing-masing. Dataset mentah dan dokumen kerja tidak dipublikasikan pada repository ini.
+> **Catatan:** Proyek-proyek ini dikerjakan sebagai bagian dari pembelajaran terstruktur DQLab. Implementasi kueri dan penyelesaian latihan pada repository ini merupakan hasil pekerjaan saya, sedangkan materi, studi kasus, dan dataset tetap menjadi hak pemilik masing-masing. Dataset e-commerce disertakan untuk mendukung reproduksi analisis, sedangkan Google Dokumen dan notebook kerja tidak dipublikasikan.
 
 ## Daftar Isi
 
@@ -110,7 +110,7 @@ Setiap file SQL dilengkapi komentar, petunjuk tabel, pembagian bagian analisis, 
 
 **Solusi:** Menyusun tiga puluh kueri yang mencakup transaksi bulanan, pembeli aktif, pelanggan bernilai tinggi, dropshipper, reseller, kategori produk terlaris, dan lama pembayaran.
 
-**Hasil:** File SQL MySQL/MariaDB yang terstruktur berdasarkan tabel `users`, `products`, `orders`, dan `order_details`.
+**Hasil:** File SQL MySQL/MariaDB yang terstruktur serta empat dataset CSV untuk tabel `users`, `products`, `orders`, dan `order_details`.
 
 ## Fitur Utama
 
@@ -174,7 +174,12 @@ sql-data-analysis-portfolio/
 │   └── certificate.pdf
 ├── 05-ecommerce-data-analysis/
 │   ├── project-data-analysis-for-e-commerce-challenge.sql
-│   └── certificate.pdf
+│   ├── certificate.pdf
+│   └── data/
+│       ├── order_details.csv
+│       ├── orders.csv
+│       ├── products.csv
+│       └── users.csv
 └── README.md
 ```
 
@@ -189,7 +194,7 @@ cd sql-data-analysis-portfolio
 
 ### 2. Siapkan basis data
 
-Impor dataset yang sesuai dengan proyek ke MySQL atau MariaDB. Nama tabel yang dibutuhkan tercantum pada bagian awal setiap file SQL.
+Impor dataset yang sesuai dengan proyek ke MySQL atau MariaDB. Nama tabel yang dibutuhkan tercantum pada bagian awal setiap file SQL. Empat dataset untuk proyek e-commerce tersedia pada folder [`05-ecommerce-data-analysis/data/`](05-ecommerce-data-analysis/data/).
 
 ### 3. Jalankan kueri
 
